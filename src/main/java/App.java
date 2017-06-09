@@ -8,5 +8,11 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+
+        try{
+            throw new Exception("test");
+        }catch(Exception e){
+            //
+        }
     }
 }
