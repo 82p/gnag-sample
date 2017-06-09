@@ -8,12 +8,11 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        String test = "test";
-        String wrong = "";
 
-        if(wrong == test){
-            System.out.println("this is test");
+        try{
+            throw new Exception("test");
+        }catch(Exception e){
+            //
         }
-        
     }
 }
